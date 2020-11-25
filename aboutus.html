@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: darkseagreen;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Talent acquistion</h1>
+  <p>When it comes to growing your company, it’s essential to have the right personnel. Every company has a team of people behind the products and services they offer. Talent acquisition helps businesses meet the demand for specialized skills in the workplace and allows businesses to grow.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/shah.jpg" alt="shah" style="width:100%">
+      <div class="container">
+        <h2>Shah rukh khan</h2>
+        <p class="title">CEO & Founder</p>
+        <p>shahrauck@acquisition.com</p>
+          <p>"<i>main goal is encourage new talents for long term"</i></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/pawan.jpg" alt="Pawan kalyan" style="width:100%">
+      <div class="container">
+        <h2>Pawan</h2>
+        <p class="title">Managing director</p>
+        <p>"<i>In coming there is going to be a great demand for talent acquisiton</i>"</p>
+        <p>Pawan@acquisition.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/Ajith(2).jpg" alt="ajith" style="width:100%">
+      <div class="container">
+        <h2>Ajith</h2>
+        <p class="title">HR</p>
+        <p>"<i>HR should be every company's killer app. What could possibly be more important than who gets hired?</i></p>
+        <p>Ajith@acquisition.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer><p>&copy; Nithin Sankepalli,terms of service</p></footer>
+</body>
+</html>
+<!-- DEVELOPER: Nithin Sankepalli, IS117-001, fall-2020->
